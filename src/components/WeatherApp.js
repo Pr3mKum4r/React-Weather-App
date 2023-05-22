@@ -3,7 +3,7 @@ import './WeatherApp.css';
 import WeatherInput from './WeatherInput';
 
 const WeatherApp = () => {
-    const API_KEY = '784a331c537b69437608419d8aa1a390';
+    const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
     const [city, setCity] = useState('London');
     const [weatherData, setWeatherData] = useState(null);
     const [toggle, setToggle] = useState('false');
